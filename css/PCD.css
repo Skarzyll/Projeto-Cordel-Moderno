@@ -1,0 +1,90 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Passion+One:wght@400;700;900&display=swap');
+
+:root {
+    --font1: 'Passion One', cursive, sans-serif;
+    --font2: 'Dancing Script', cursive, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-width: 100vh;
+    background-color: lightgray;
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font1);
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 10vh 0vh;
+    line-height: 2em;
+    padding: 30px;
+    font-family: var(--font2);
+    font-size: 4vw;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: #515151;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.699);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section.image > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+section#img01 {
+    background-image: url(../images/background001.jpg);
+    background-position: center center;
+
+}
+
+section#img02 {
+    background-image: url(../images/background002.jpg);
+    background-position: center center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
